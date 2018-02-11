@@ -1,2 +1,2 @@
-cp c/Users/rob/AppData/Roaming/bug.n/Config.ini /c/Users/rob/AppData/Roaming/bug.n/Config.ini
-ln -s .vimrc ~
+cp -f c/Users/rob/AppData/Roaming/bug.n/Config.ini /c/Users/rob/AppData/Roaming/bug.n/Config.ini
+cp -f .vimrc ~
