@@ -33,6 +33,7 @@
   :ensure t)
 (key-chord-mode 1)
 (key-chord-define-global "  " 'helm-M-x)
+(key-chord-define-global " f" 'helm-find-files)
 
 ; (defvar custom-keymap (make-sparse-keymap))
 ; (define-key custom-keymap (kbd "SPC") 'helm-M-x)
