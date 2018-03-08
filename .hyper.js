@@ -15,7 +15,7 @@ module.exports = {
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorColor: 'rgba(166,159,141,0.8)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
@@ -23,11 +23,6 @@ module.exports = {
     // set to true for blinking cursor
     cursorBlink: false,
 
-    // color of the text
-    foregroundColor: '#fff',
-
-    // terminal background color
-    backgroundColor: '#000',
 
     // border color (window, tabs)
     borderColor: '#333',
@@ -52,7 +47,8 @@ module.exports = {
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
-    // an array here instead of a color map object
+      // an array here instead of a color map object
+      /*
     colors: {
       black: '#000000',
       red: '#ff0000',
@@ -70,6 +66,33 @@ module.exports = {
       lightMagenta: '#cc00ff',
       lightCyan: '#00ffff',
       lightWhite: '#ffffff'
+    },
+      */
+
+    // color of the text
+    foregroundColor: '#4c4741',
+
+    // terminal background color
+    backgroundColor: '#d1cbb2',
+
+    colors: {
+	//black: '#d1cbb2',
+      black: '#4c4741',
+      red: '#4c4741',
+      green: '#4c4741',
+      yellow: '#4c4741',
+      blue: '#4c4741',
+      magenta: '#4c4741',
+      cyan: '#4c4741',
+      white: '#4c4741',
+      lightBlack: '#4c4741',
+      lightRed: '#4c4741',
+      lightGreen: '#4c4741',
+      lightYellow: '#4c4741',
+      lightBlue: '#4c4741',
+      lightMagenta: '#4c4741',
+      lightCyan: '#4c4741',
+      lightWhite: '#4c4741'
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -117,7 +140,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-snazzy'],
+  plugins: [],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
