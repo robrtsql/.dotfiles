@@ -73,7 +73,7 @@ module.exports = {
     foregroundColor: '#4c4741',
 
     // terminal background color
-    backgroundColor: '#d1cbb2',
+    backgroundColor: '#282a36',
 
     colors: {
 	//black: '#d1cbb2',
@@ -107,11 +107,11 @@ module.exports = {
     //
     // Powershell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: 'C:\\Users\\rob\\git-sdk-64\\msys2_shell.cmd',
+    shell: 'C:\\Users\\rob\\msys2\\msys2_shell.cmd',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
-    shellArgs: ['-defterm', '-no-start', '-mingw64'],
+    shellArgs: ['-defterm', '-no-start', '-mingw64', '-use-full-path'],
 
     // for environment variables
     env: {
@@ -140,7 +140,12 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-hover-header'],
+  plugins: [
+    'hyper-hover-header',
+    'hyper-dracula'
+  ],
+
+  backgroundColor: '#aaaaaa',
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

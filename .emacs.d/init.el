@@ -30,6 +30,7 @@
 
 (use-package ivy :ensure t)
 (use-package counsel :ensure t)
+(use-package helm :ensure t)
 (use-package swiper :ensure t)
 (use-package which-key :ensure t)
 (which-key-mode)
@@ -55,22 +56,30 @@
    :non-normal-prefix "C-SPC"
 
     "SPC" '(counsel-M-x  :which-key "type command")
-    "f f" '(counsel-find-file  :which-key "open file")
+    "f f" '(helm-find-files  :which-key "open file")
 
     ))
+
+(use-package dracula-theme :ensure t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (yorha)))
  '(custom-safe-themes
    (quote
-    ("90fe778d2d4f2fd7798735fef2bd056e319ed5e7d01b3e6680a1413632574a46" "751d5bfd740477e9198c7885ce95840073f1fcf68f24c8d8938b25ba16571418" "572274ce16ece654b5cfeb509b9b9e8644ba84308416a8b68b28a2c75f7780b0" "acdc48caa3bd9bcf6fdc937278a374c3046ffa8f1630671f943e62e79a919952" default)))
- '(package-selected-packages (quote (use-package))))
+    ("ff7625ad8aa2615eae96d6b4469fcc7d3d20b2e1ebc63b761a349bebbb9d23cb" "748a8fd5670b01d1b4a1d762c154c482f95483f764d9903278660e795afd4748" "8903d226757399218129164c294e21b97bebf22ab0f21a331d24435edb9c2419" "f72d808c65399e593c4ab7779f687ac6c15db09748ef044abfc63d46b92bc88b" "90fe778d2d4f2fd7798735fef2bd056e319ed5e7d01b3e6680a1413632574a46" "751d5bfd740477e9198c7885ce95840073f1fcf68f24c8d8938b25ba16571418" "572274ce16ece654b5cfeb509b9b9e8644ba84308416a8b68b28a2c75f7780b0" "acdc48caa3bd9bcf6fdc937278a374c3046ffa8f1630671f943e62e79a919952" default)))
+ '(package-selected-packages (quote (helm ## use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(load-theme 'dracula)
+(set-face-attribute 'default nil
+                    :family "Source Code Pro"
+                    :height 110)
